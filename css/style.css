@@ -26,14 +26,21 @@ body{
     background-color:#e5e5e5;
 }
 
+.wrapper{
+    height: 100vh;
+}
+
 .ms_main{
+    overflow: hidden;
+    margin-top: 76px;
     height: 100vh;
 }
 
 .aside-bar{
     width: 20%;
+    flex-grow: 1;
+    background-color: #001831;
     /* DEBUG */
-    background-color: red;
 }
 
 .main-content{
@@ -43,9 +50,28 @@ body{
 }
 
 .text{
-    border: 1px solid black;
-    min-height: 50px;
+    padding: 10px;
+    width: 100%;
+    /* DEBUG */
+    /* border: 1px solid black; */
 }
+
+.special-text{
+    height:calc(100vh - 138px);
+    padding: 10px;
+    width: 100%;
+    /* DEBUG */
+    /* border: 1px solid black; */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
 
 
 
