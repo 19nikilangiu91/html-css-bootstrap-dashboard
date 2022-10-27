@@ -11,11 +11,22 @@ body{
 
 .ms_header{
     background-color: lightgrey;
-    height: 100px;
+    /* height: 100px; */
+}
+
+.ms_yellow_icon{
+    color:#ff8e00;
+}
+
+.navbar-toggler{
+    border-color: #f8f9fa;
+}
+
+.form-control{
+    background-color:#e5e5e5;
 }
 
 .ms_main{
-    margin-top: 100px;
     height: 100vh;
 }
 
@@ -29,6 +40,11 @@ body{
     width: 100%;
     /* DEBUG */
     background-color: green;
+}
+
+.text{
+    border: 1px solid black;
+    min-height: 50px;
 }
 
 
