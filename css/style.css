@@ -129,7 +129,24 @@ span{
     border-radius: 25%;
 }
 
+/* FAQ Container */
+.ms_col_faq{
+    height: 100%;
+}
 
+/* Statistic Container */
+
+.stat img{
+    width: 100%;
+}
+
+.ms_lista_utenti{
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+}
 
 
 
