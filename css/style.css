@@ -12,6 +12,14 @@ header{
     height:50px;
 }
 
+.navbar-toggler{
+    border: #f8f9fa;
+}
+
+.yellow-icon{
+    color: #ffc003;
+}
+
 .row{
     /* DEBUG */
     /* border: 1px solid yellow; */
@@ -32,6 +40,7 @@ main{
     overflow: hidden;
     height: 100vh;
     display: flex;
+    margin-top: 76px;
     background-color: #f8f9fa;
     /* DEBUG */
 }
@@ -101,6 +110,7 @@ span{
 .ms_table{
     width: 100%;
 }
+
 .fa-solid.fa-code{
     color: white;
     background-color: red;
