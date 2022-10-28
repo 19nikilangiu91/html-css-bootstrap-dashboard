@@ -13,12 +13,43 @@
     <!-- Header -->
     <div class="wrapper">
         <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                    </div>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
                 </div>
-            </div>
+              </nav>
+            
         </header>
 
         <!-- Main -->
@@ -66,14 +97,14 @@
                         <div class="col col-md-8 text-white">
                             <div class="text pt-2">
                                 <h2 class="ms_boolean_blue d-inline-block">Boolean</h2>
-                                <span>Piano blaze</span>
+                                <span class="circle">Piano blaze</span>
                                 <div class="col-12">
-                                    <span>3 app</span>
+                                    <span class="circle">3 app</span>
                                     <span><i class="fa-solid fa-angles-right"></i></span>
                                     <span class="d-md-none"><i class="fa-solid fa-plus"></i></span>
-                                    <span class="d-none d-md-inline">Boolean mobile app</span>
-                                    <span class="d-none d-md-inline">Boolean web app</span>
-                                    <span class="d-none d-md-inline">Boolean blog app</span>
+                                    <span class="d-none d-md-inline circle">Boolean mobile app</span>
+                                    <span class="d-none d-md-inline circle">Boolean web app</span>
+                                    <span class="d-none d-md-inline circle">Boolean blog app</span>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +251,7 @@
                         </div>
                         
                         <!-- FAQ Container -->
-                        <div class="ms_col_faq col col-md-3 order-3 bg-light my-2 pt-2">
+                        <div class="ms_col_faq col col-md-3 order-3 bg-light my-2 py-2">
                             <div class="text text-white pt-2">
                                 <h4 class="ms_faq d-inline-block text-black">F.A.Q</h4>
                             </div>
@@ -277,7 +308,7 @@
 
                 <div class="container-fluid">
                     <div class="row row-cols-1 row-cols-md-2 pt-1 justify-content-evenly">
-                        <div class="ms_col_todo col col-md-8 bg-light text-white pt-3 m-1">
+                        <div class="ms_col_todo col col-md-8 bg-light text-white py-2 m-1">
                             <div class="text pt-2">
                                 <h4 class="ms_todo d-inline-block text-black">Todo</h4>
                             </div>
@@ -296,7 +327,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="ms_col_utenti col col-md-3 bg-light order-4 pt-3">
+                        <div class="ms_col_utenti col col-md-3 bg-light order-4 pt-3 mb-5">
                             <div class="stat">
                                 <img src="./img/statistic.png" alt="Statistic image"> 
                             </div>
