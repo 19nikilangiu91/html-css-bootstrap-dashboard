@@ -1,73 +1,139 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    /* DEBUG */
-    background-color: yellow;
-}
-
-.ms_header{
-    background-color: lightgrey;
-    /* height: 100px; */
-}
-
-.ms_yellow_icon{
-    color:#ff8e00;
-}
-
-.navbar-toggler{
-    border-color: #f8f9fa;
-}
-
-.form-control{
-    background-color:#e5e5e5;
-}
+/* Genaral Rules */
 
 .wrapper{
     height: 100vh;
+    width: 100%;
+    /* background-color: black; */
 }
 
-.ms_main{
+header{
+    /* DEBUG */
+    background-color: grey;
+    height:50px;
+}
+
+.row{
+    /* DEBUG */
+    /* border: 1px solid yellow; */
+
+}
+
+.col, .col-1, .col-2,
+.col-3, .col-4, .col-5,
+.col-6, .col-7, .col-8,
+.col-9, .col-10, .col-11,
+.col-12{
+    /* DEBUG */
+    /* min-height: 50px; */
+    border: 1px solid black
+}
+
+main{
     overflow: hidden;
-    margin-top: 76px;
     height: 100vh;
+    display: flex;
+    background-color: #f8f9fa;
+    /* DEBUG */
 }
 
-.aside-bar{
-    width: 20%;
+/* Nav-Aside */
+
+.nav-aside{
+    overflow: hidden;
+    height: 100vh;
     flex-grow: 1;
-    background-color: #001831;
+    width: 20%;
     /* DEBUG */
+    background-color: red;
 }
 
-.main-content{
-    width: 100%;
-    /* DEBUG */
-    background-color: green;
-}
-
-.text{
-    padding: 10px;
-    width: 100%;
-    /* DEBUG */
-    /* border: 1px solid black; */
-}
-
-.special-text{
-    height:calc(100vh - 138px);
-    padding: 10px;
-    width: 100%;
-    /* DEBUG */
-    /* border: 1px solid black; */
-}
-
-a{
+i, h6{
     text-decoration: none;
+    margin-right: 10px;
     color: white;
 }
+
+.ms_container{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+}
+
+/* Middle Main */
+
+.middle{
+    overflow: scroll;
+    height: 100vh;
+    width: 100%;
+    /* DEBUG */
+    /* background-color: blue; */
+}
+
+/* Blu Container */
+.ms_boolean_blue{
+    margin-right: 10px;
+    color: white;
+}
+
+span{
+    margin-right: 5px;
+}
+
+/* Prossime Classi Container */
+
+.ms_col_prossime, .ms_col_faq,
+.ms_col_todo, .ms_col_utenti {
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+.ms_table{
+    width: 100%;
+}
+.fa-solid.fa-code{
+    color: white;
+    background-color: red;
+    border: 1px;
+    border-radius: 25%;
+}
+
+.fa-solid.fa-pencil,
+.fa-solid.fa-trash{
+    border: 1px solid grey;
+    border-color:grey;
+}
+
+.fa-solid.fa-plus{
+    color: #0f75fc;
+    padding: 10px;
+    border: 1px solid #0f75fc;
+}
+
+.done{
+    padding: 5px;
+    color: white;
+    background-color: green;
+    border-radius: 25%;
+}
+
+.process{
+    padding: 5px;
+    color: white;
+    background-color: #ffc003;
+    border-radius: 25%;
+}
+
+.failed{
+    padding: 5px;
+    color: white;
+    background-color: red;
+    border-radius: 25%;
+}
+
+
+
+
+
+
 
 
 

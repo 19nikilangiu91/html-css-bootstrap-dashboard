@@ -5,121 +5,367 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Bootstrap Dashboard</title>
 </head>
 <body>
-    <header class="ms_header fixed-top">
-        <nav class="navbar navbar-expand-md bg-light">
+    <!-- Header -->
+    <div class="wrapper">
+        <header>
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/Logo.png" alt="Boolean Logo">
-                </a>
-                <h3 class="d-none d-md-block">Boolean</h3>
-                <form class="d-flex col ms me-auto md ms-2" role="search">
-                <input class="form-control mr-sm-2 col " type="search" placeholder=" &#9906 Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                </form>
-                <button class="d-none d-md-block navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
-                </button>
-                <button class="d-none d-md-block navbar-toggler me-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                        <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-                    </svg>
-                </button>
-                <button class="d-none d-md-block navbar-toggler me-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                    </svg>
-                </button>
-                <button class="d-none d-md-block navbar-toggler me-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg class="ms_yellow_icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
-                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
-                      </svg>
-                </button>
-                <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div> -->
-                <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg class="ms_yellow_icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
-                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
-                      </svg>
-                </button>
-                </form>
+                <div class="row">
+                    <div class="col">
+                    </div>
+                </div>
             </div>
-        </nav>
-    </header>
+        </header>
 
-    <div class="wrapper">  
-        <main class="ms_main d-flex">
-            <div class="aside-bar">
-                <div class="row justify-content-center text-center">
-                    <div class="col-12">
-                        <div class="text">
-                            <a href="#">
+        <!-- Main -->
+        <main>
+            <!-- Nav-Aside -->
+            <div class="nav-aside">
+                <div class="ms_container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="icon p-2">
                                 <i class="fa-solid fa-house"></i>
-                                <h6 class="d-none d-md-inline-block">Home</h6>  
-                            </a>
+                                <h6 class="d-none d-md-inline-block">Home</h6>
+                            </div>
                         </div>
-                        <div class="text">
-                            <a href="#">
+                        <div class="col-12 text-center">
+                            <div class="icon p-2">
                                 <i class="fa-solid fa-chart-simple"></i>
-                                <h6 class="d-none d-md-inline-block">Stats</h6> 
-                            </a>
+                                <h6 class="d-none d-md-inline-block">Stats</h6>
+                            </div>
                         </div>
-                        <div class="special-text">
-                            <a href="#">
-                                <i class="fa-solid fa-signal"></i> 
-                                <h6 class="d-none d-md-inline-block">Signals</h6> 
-                            </a>
+                        <div class="col-12 text-center">
+                            <div class="icon p-2">
+                                <i class="fa-solid fa-signal"></i>
+                                <h6 class="d-none d-md-inline-block">Signals</h6>
+                            </div>
                         </div>
-                        <div class="text">
-                            <a href="#">
+                    </div>
+                </div>
+                <div class="container">   
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="icon p-2">
                                 <i class="fa-solid fa-gear"></i>
-                                <h6 class="d-none d-md-inline-block">Admin</h6>  
-                            </a>
+                                <h6 class="d-none d-md-inline-block">Admin</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="main-content">
+            <!-- Middle Main -->
+            <div class="middle">
+                <!-- Blue Container -->
                 <div class="container-fluid">
-                    <div class="row">
-                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime repellat aperiam veritatis aliquid, quae facilis laboriosam enim rem beatae porro expedita itaque, eveniet illum! Veniam laborum possimus nemo velit minus!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rem enim doloremque atque consequuntur, doloribus mollitia laborum, velit perferendis sequi facere deleniti corrupti ad sint rerum ea voluptas praesentium quaerat.
+                    <div class="row row-cols-1 row-cols-md-2 bg-primary">
+                        <div class="col col-md-8 text-white">
+                            <div class="text pt-2">
+                                <h2 class="ms_boolean_blue d-inline-block">Boolean</h2>
+                                <span>Piano blaze</span>
+                                <div class="col-12">
+                                    <span>3 app</span>
+                                    <span><i class="fa-solid fa-angles-right"></i></span>
+                                    <span class="d-md-none"><i class="fa-solid fa-plus"></i></span>
+                                    <span class="d-none d-md-inline">Boolean mobile app</span>
+                                    <span class="d-none d-md-inline">Boolean web app</span>
+                                    <span class="d-none d-md-inline">Boolean blog app</span>
+                                </div>
+                            </div>
                         </div>
-                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime repellat aperiam veritatis aliquid, quae facilis laboriosam enim rem beatae porro expedita itaque, eveniet illum! Veniam laborum possimus nemo velit minus!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rem enim doloremque atque consequuntur, doloribus mollitia laborum, velit perferendis sequi facere deleniti corrupti ad sint rerum ea voluptas praesentium quaerat.
-                        </div>
-                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime repellat aperiam veritatis aliquid, quae facilis laboriosam enim rem beatae porro expedita itaque, eveniet illum! Veniam laborum possimus nemo velit minus!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rem enim doloremque atque consequuntur, doloribus mollitia laborum, velit perferendis sequi facere deleniti corrupti ad sint rerum ea voluptas praesentium quaerat.
-                        </div>
-                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime repellat aperiam veritatis aliquid, quae facilis laboriosam enim rem beatae porro expedita itaque, eveniet illum! Veniam laborum possimus nemo velit minus!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rem enim doloremque atque consequuntur, doloribus mollitia laborum, velit perferendis sequi facere deleniti corrupti ad sint rerum ea voluptas praesentium quaerat.
+                        <div class="col col-md-4">
+                            <div class="text text-white pt-2">
+                                <div class="ms_students ">
+                                    Studenti online negli ultimi 30 minuti
+                                </div>
+                                <div class="ms_numbers pt-2 fs-1">
+                                    125
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row row-cols-1 row-cols-md-2 justify-content-evenly">
+                        <div class="ms_col_prossime col col-md-8 bg-light text-white m-1">
+                            <div class="bg-light w-100 text pt-2 d-flex justify-content-between ">
+                                <h4 class="ms_prossime d-inline-block text-dark">Prossime Classi</h4>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+
+                            <div class="ms_table text-start">
+                                <table class="table">
+                                    <thead>
+                                        <tr class="text fs-6">
+                                            <th class="w-50" scope="col">Nome</th>
+                                            <th scope="col">Data inizio</th>
+                                            <th scope="col">ROI</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <i class="fa-solid fa-code"></i>
+                                                <span>Classe 75</span>
+                                            </th>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="done">Done</span></td>
+                                            <td><i class="text-dark 
+                                                bg-light p-1 bg-secondary fa-solid fa-pencil"></i>
+                                                <i class="text-dark p-1 bg-light fa-solid fa-trash"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <i class="fa-solid fa-code"></i>
+                                                <span>Classe 75</span>
+                                            </th>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="done">Done</span></td>
+                                            <td><i class="text-dark 
+                                                bg-light p-1 bg-secondary fa-solid fa-pencil"></i>
+                                                <i class="text-dark p-1 bg-light fa-solid fa-trash"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <i class="fa-solid fa-code"></i>
+                                                <span>Classe 75</span>
+                                            </th>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="process">Process</span></td>
+                                            <td><i class="text-dark 
+                                                bg-light p-1 bg-secondary fa-solid fa-pencil"></i>
+                                                <i class="text-dark p-1 bg-light fa-solid fa-trash"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <i class="fa-solid fa-code"></i>
+                                                <span>Classe 75</span>
+                                            </th>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="done">Done</span></td>
+                                            <td><i class="text-dark 
+                                                bg-light p-1 bg-secondary fa-solid fa-pencil"></i>
+                                                <i class="text-dark p-1 bg-light fa-solid fa-trash"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <i class="fa-solid fa-code"></i>
+                                                <span>Classe 75</span>
+                                            </th>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="failed">Failed</span></td>
+                                            <td><i class="text-dark 
+                                                bg-light p-1 bg-secondary fa-solid fa-pencil"></i>
+                                                <i class="text-dark p-1 bg-light fa-solid fa-trash"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <i class="fa-solid fa-code"></i>
+                                                <span>Classe 75</span>
+                                            </th>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="done">Done</span></td>
+                                            <td><i class="text-dark 
+                                                bg-light p-1 bg-secondary fa-solid fa-pencil"></i>
+                                                <i class="text-dark p-1 bg-light fa-solid fa-trash"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <i class="fa-solid fa-code"></i>
+                                                <span>Classe 75</span>
+                                            </th>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="failed">Failed</span></td>
+                                            <td><i class="text-dark 
+                                                bg-light p-1 bg-secondary fa-solid fa-pencil"></i>
+                                                <i class="text-dark p-1 bg-light fa-solid fa-trash"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <i class="fa-solid fa-code"></i>
+                                                <span>Classe 75</span>
+                                            </th>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="done">Done</span></td>
+                                            <td><i class="text-dark 
+                                                bg-light p-1 bg-secondary fa-solid fa-pencil"></i>
+                                                <i class="text-dark p-1 bg-light fa-solid fa-trash"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                    
+                                   
+                            </div>
+                        </div>
+                        <div class="ms_col_faq col col-md-3 bg-secondary m-1">
+                            <div class="text text-white pt-2">
+                                <h4 class="ms_faq d-inline-block">F.A.Q</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row row-cols-1 row-cols-md-2 justify-content-evenly">
+                        <div class="ms_col_todo col col-md-8 bg-secondary text-white m-1">
+                            <div class="text pt-2">
+                                <h4 class="ms_todo d-inline-block">Todo</h4>
+                            </div>
+                        </div>
+                        <div class="ms_col_utenti col col-md-3 bg-secondary m-1">
+                            <div class="text text-white pt-2">
+                                <h4 class="ms_utenti d-inline-block">Utenti Attivi</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+                               
+                                
+                                
+                                    <!-- <table>
+                                        <tr>
+                                            <th class="col-6">Nome</th>
+                                            <th class="col-2">Data inizio</th>
+                                            <th class="col-2">ROI</th>
+                                            <th class="col-2">Stato</th>
+                                            <th class="col-2">Azioni</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="fa-solid fa-code"></i>
+                                                <span>Classe 75</span>
+                                            </td>
+                                            <td>15 Feb 2021</td>
+                                            <td>Germany</td>
+                                            <td>Maria Anders</td>
+                                            <td>Germany</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Centro comercial Moctezuma</td>
+                                            <td>Francisco Chang</td>
+                                            <td>Mexico</td>
+                                            <td>Francisco Chang</td>
+                                            <td>Mexico</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ernst Handel</td>
+                                            <td>Roland Mendel</td>
+                                            <td>Austria</td>
+                                            <td>Roland Mendel</td>
+                                            <td>Austria</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Island Trading</td>
+                                            <td>Helen Bennett</td>
+                                            <td>UK</td>
+                                            <td>Helen Bennett</td>
+                                            <td>UK</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Laughing Bacchus Winecellars</td>
+                                            <td>Yoshi Tannamuri</td>
+                                            <td>Canada</td>
+                                            <td>Yoshi Tannamuri</td>
+                                            <td>Canada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Magazzini Alimentari Riuniti</td>
+                                            <td>Giovanni Rovelli</td>
+                                            <td>Italy</td>
+                                            <td>Giovanni Rovelli</td>
+                                            <td>Italy</td>
+                                        </tr>
+                                    </table> -->
+                              
+                            <!-- <div class="ms_dates d-flex">
+                                <div class="col-4">
+                                    Nome
+                                </div>
+                                <div class="col-2">
+                                    Data d'inizio
+                                </div>
+                                <div class="col-2">
+                                    ROI
+                                </div>
+                                <div class="col-2">
+                                    Stato
+                                </div>
+                                <div class="col-2">
+                                    Azioni
+                                </div>
+                            </div>
+                            <div class="ms_class d-flex">
+                                <div class="col-4">
+                                    <i class="fa-solid fa-code"></i>
+                                    <span>Classe 75</span>
+                                </div>
+                                <div class="col-2">
+                                    Data d'inizio
+                                </div>
+                                <div class="col-2">
+                                    ROI
+                                </div>
+                                <div class="col-2">
+                                    Stato
+                                </div>
+                                <div class="col-2">
+                                    Azioni
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="col col-md-4">
+                            <div class="text text-white pt-2">
+                                <div class="ms_students ">
+                                    Studenti online negli ultimi 30 minuti
+                                </div>
+                                <div class="ms_numbers pt-2 fs-1">
+                                    125
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+
                 </div>
             </div>
         </main>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!-- <div class="row bg-primary">
+    <div class="d-flex align-items-end  col-6">
+        <div class="col-4">
+            <span class="text-white fs-3">Boolean</span> 
+        </div>
+        <div class="col-8">
+            <span class="text-white">Piano blaze</span> 
+        </div>
+        <div class="col-4">
+            <span class="text-white fs-3">Boolean</span> 
+        </div>
+    </div>
+</div> -->
