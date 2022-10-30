@@ -1,0 +1,153 @@
+/* General Rules */
+
+.wrapper{
+  height: 100vh;
+  width: 100%;
+  /* DEBUG */
+  background-color: black;
+}
+
+.ms_contone{
+  height: calc(100vh - 90px);
+  /* DEBUG */
+  /* border: 1px solid white; */
+}
+
+.ms_conttwo{
+  /* DEBUG */
+  /* border: 1px solid white; */
+}
+
+.ms_yellow_bell{
+  color: #ff9000;
+}
+
+/* HEADER RULES */
+
+header{
+  height: 50px;
+  width: 100%;
+  /* DEBUG */
+  background-color: red;
+}
+
+.dropdown-menu.show{
+  right: 0;
+  left: initial;
+}
+
+/* MAIN RULES */
+
+main{
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  margin-top: 76px;
+}
+
+/* ASIDE RULES */
+
+.aside{
+  width: 20%;
+  height: 100vh;
+  background-color: #001831;
+  /* DEBUG */
+}
+
+.padding{
+  padding: 0 10px;
+}
+
+/* CENTRAL RULES */
+
+.ms_colone{
+  /* DEBUG */
+  background-color: yellow;
+}
+.ms_coltwo{
+  /* DEBUG */
+  background-color: red;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.central{
+  overflow: scroll;
+  height: 100vh;
+  width: 100%;
+  /* DEBUG */
+  background-color: white;
+}
+
+.ms_btn_blaze:hover{
+  background-color:#2872cd;
+}
+
+.btn{
+  color: var(--bs-btn-hover-color);
+  background-color:#0e5bbb;
+  border: #0e5bbb;
+}
+
+.ms_plus{
+  background-color: #e9ecef;
+  color: #0e5bbb;
+  border: 1px solid #0e5bbb;
+}
+
+.ms_plus:hover{
+  background-color: #0e5bbb;
+  color: #e9ecef;
+}
+
+.ms_salva_btn{
+  background-color: #ffc107
+}
+
+.ms_salva_btn:hover{
+  background-color: #ffdc73;
+}
+
+.ms_reset_btn:hover{
+  background-color:#297bdf;
+
+}
+
+/* Prossime Classi Section */
+
+.ms_prossime_button{
+  border-bottom: 1px solid grey;
+}
+
+.table{
+  font-size: 12px;
+}
+
+.ms_pencil:hover, .ms_trash:hover{
+  background-color: grey;
+}
+
+.text-center:hover{
+  background-color: lightgray;
+}
+
+/* Utenti Attivi Section */
+
+.ms_list{
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
